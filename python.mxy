@@ -1,0 +1,72 @@
+# Python i 1T
+
+## Partall
+
+Skriver ut de 4 første partallene
+@python code
+n=1
+while n<5:
+  partall = 2*n
+  print(partall)
+  n = n +1
+#GO!
+
+## Trekantall
+
+Fire første trekanttall
+
+@python code
+t = 0
+for n in range(1,5):
+  t = t + n
+  print(t)
+#GO!
+
+## Faktorisering
+
+@python code
+t = 2*3*3*5*13
+for f in range(2,t):
+  while (t % f == 0):
+    print(f)
+    t = t/f
+#GO!
+
+
+## Kvadratrot i python
+
+@python code
+from math import *
+print(sqrt(2))
+#GO!
+
+## Herons formel
+
+Tilnærmet verdi til $sqrt(2)$
+@python code
+f=0
+a=1
+n=2
+while (abs(a-f) > 0.0001):
+  f = a
+  a = 1/2*(a+n/a)
+  print(a)
+#GO!
+
+
+## Test om 2m * 2m er partall
+
+@python code
+regel = True
+for n in range(2,21,2):
+  for m in range(2,21,2):
+    if (n*m) % 2 != 0:
+      print("Regelen er brutt for ",n,m)
+      regel = False
+print("Regelen ser ut til å være ",regel)
+#GO!
+
+
+
+
+
