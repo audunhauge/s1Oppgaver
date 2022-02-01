@@ -66,7 +66,80 @@ for n in range(2,21,2):
 print("Regelen ser ut til å være ",regel)
 #GO!
 
+## ABC formelen
+
+Beregner fasit med CAS
+@cas
+evalf(solve(x^2+5x+2=0))
+
+
+@python code
+from math import sqrt
+# a=float(input("a="))
+# b=float(input("b="))
+# c=float(input("c="))
+# Bruker ikke input - da
+# det er mange program på sida
+a=1
+b=5
+c=2
+d2 =b*b-4*a*c
+d = sqrt(d2)/(2*a)
+m = -b/(2*a)
+x1 = round(m - d,4)
+x2 = round(m + d,4)
+print("x1=",x1," x2=",x2)
+#GO!
+
+Ser vi får samme svar.
+
+## Ettpunktsformelen
+
+bruker ettpunktsformelen på
+(1,2) og (6,8)
+@python code
+#x1=float(input("x1="))
+#y1=float(input("y1="))
+#x2=float(input("x2="))
+#y2=float(input("y2="))
+#  mange prog på en side
+# - ikke input
+x1=1
+y1=2
+x2=6
+y2=8
+a=(y2-y1)/(x2-x1)
+b=y1-a*x1
+print("y=",a,"x + ",b)
+#GO!
+
+
+## Funksjonsplott i python
+
+@python code
+from pylab import *
+def f(x):
+  return x*x+2*x
+xs = linspace(-5,5,100)
+ys = f(xs)
+plot(xs,ys)
+show()
+#GO!
 
 
 
+## Graf med pynt
+
+@python code
+from pylab import *
+def f(x):
+  return x*x+2*x
+xs = linspace(-5,5,100)
+ys = f(xs)
+plot(xs,ys)
+xlabel("x")
+ylabel("f(x)")
+grid()
+show()
+#GO!
 
