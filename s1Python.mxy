@@ -1,0 +1,60 @@
+# Python eksempler for S1
+
+
+### Side 60,63  log ln
+
+Bruk av log og ln i python
+
+@python code
+from math import log10,log
+print("log(500) = ",log10(500))
+print("ln(2) = ",log(2))
+#GO!
+
+
+### Side 86, halveringsmetode
+
+@python code
+from math import log
+a=0
+b=1
+e=0.0001
+def f(x):
+  return 5*log(x*x*x+2)+x-6
+i=0
+m=(a+b)/2
+while abs(f(m)) >= e and i < 100:
+  if f(a)*f(m) < 0:
+    b=m
+  else:
+    a=m
+  m=(a+b)/2
+  i = i + 1
+print(round(m,4))
+#GO!
+
+
+### Side 95, logaritmisk skala
+
+@python code
+from pylab import *
+def f(x):
+  return 1000*1.15**x
+xs = linspace(0,12,100)
+ys = f(xs)
+plot(xs,ys)
+yscale("log")
+show()
+#GO!
+
+
+### Side 116, grenseverdi
+
+@python code
+def f(x):
+  return 3*(x*x-4)/(x-2)
+dx = 0.1
+
+
+
+
