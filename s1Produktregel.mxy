@@ -1,0 +1,28 @@
+# 4.35
+
+a) $f(x)=e^x*ln(x)$
+
+@cas nummer
+u:=e^x
+v:=ln(x)
+ u*v'+v*u'
+ (u*v)'
+ (e^x*ln(x))'
+
+b) $2e^x+5x*ln(x)+3x$
+
+@cas nummer
+(2e^x)'
+(3x)'
+u:=5x
+v:=ln(x)
+u*v'+v*u'
+(u*v)'
+(2e^x+5x*ln(x)+3x)'
+
+c) $e^(2x)+x+3$
+@cas number
+u:=2x
+e^u
+(e^u)'
+e^u * u'
