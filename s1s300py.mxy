@@ -1,0 +1,18 @@
+
+@oppgave
+.
+
+
+@python code
+median = [40300,41200,42180,43400,45000]
+nedre = [33300,34100,34980,35840,37180]
+ovre = [50100,50900,52250,53910,55870]
+aar = [2015,2016,2017,2018,2019]
+ylim(30000,60000)
+plot(aar,median)
+plot(aar,nedre)
+plot(aar,ovre)
+xlabel("År")
+ylabel("Månedslønn")
+show()
+#GO!

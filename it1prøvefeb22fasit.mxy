@@ -1,0 +1,51 @@
+# Prøve
+
+@oppgave
+
+## Legger g(x) inn i CAS
+
+@cas
+f(x):=x**4+x**3-7x**2-x+6
+g(x):=f(x)'::f'(x)
+ factor(f(x))::faktorisert
+
+### Viser f(x)
+
+@math
+f(x) = x^4+x^3-7x^2-x+6
+
+### Tegner fortegnslinje
+
+@fortegn
+f:(x-2)(x-1)(x+1)(x+3)
+f':'(x-2)(x-1)(x+1)(x+3)
+
+### Tegner grafen
+
+@fplot
+(x**3-x**2+3x-9)/(x**2-9);x-1,-10,10,-15,10
+
+@oppgave
+
+@ans Lodrette asymptoter for x=3 og x=-3
+
+### Polynomdivisjon
+
+@poldiv
+(x**3-x**2+3x-9)
+(x**2-9)
+
+@ans Ser da at $y = x -1 $ er en skrå asymptote.
+
+
+@oppgave
+
+Definerer funk i cas
+@cas
+T(x):=17.2*x^(1.5)
+T(0.778)
+solve(T(x)=1)
+
+@ans a) 11.8 år
+@ans b) 0.15 milliarder km
+

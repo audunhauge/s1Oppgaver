@@ -1,0 +1,22 @@
+
+
+@oppgave
+
+
+@python
+median = [40300,40920,41820,43020,44650,45610,47580]
+nedre = [33300,33800,34500,35450,36670,37670,39200]
+ovre = [50100,50820,51960,53640,55600,56830,59340]
+aa = [15,16,17,18,19,20,21]
+plot(aa,median)
+plot(aa,median,"go")
+plot(aa,nedre)
+plot(aa,nedre,"bo")
+plot(aa,ovre)
+plot(aa,ovre,"ro")
+ylim(30000,60000)
+xlabel("År")
+ylabel("Månedslønn")
+plotsize(w=800,h=500)
+show()
+#GO!

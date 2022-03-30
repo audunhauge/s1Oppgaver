@@ -1,0 +1,18 @@
+@oppgave
+
+Lager krukke med kuler
+
+
+@python
+from pylab import *
+kulene = ["blå"] * 2 + ["rød"] * 3
+N = 10000
+br = 0
+for i in range(N):
+  t = choice(kulene,size=2)
+  br = br + int((t[0] == "blå") and (t[1]=="rød")) 
+print("Rel frek rød blå :",br/N)
+#GO!
+
+@cas
+6.0/25

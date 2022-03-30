@@ -1,0 +1,19 @@
+## Likning med to ukjente python
+
+
+@python code
+#a=int(input("a="))
+#b=int(input("b="))
+#c=int(input("c="))
+#d=int(input("d="))
+#e=int(input("e="))
+#f=int(input("f="))
+a,b,c,d,e,f = 1,2,3,4,5,6
+aeMbd = a*e-b*d
+if aeMbd == 0:
+  print("Parallelle linjer")
+else:
+  x = (c*e-b*f)/aeMbd
+  y = (a*f-c*d)/aeMbd
+  print("L={(",x," , ",y,")}")
+#GO!
